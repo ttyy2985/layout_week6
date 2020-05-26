@@ -1,12 +1,20 @@
-@import "../node_modules/bootstrap-scss/bootstrap.scss";
+@import '../node_modules/bootstrap-scss/bootstrap.scss';
+img {
+  display: block;
+}
 
 .navbar {
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url("https://images.unsplash.com/photo-1566733971017-f6a46e832e95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   // background-image: url("https://images.unsplash.com/photo-1566733971017-f6a46e832e95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+  background-image: url('https://images.unsplash.com/photo-1590415555114-d308bf24212e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80');
+  // }
+}
+
+.section1 .row {
+  height: 800px;
 }
