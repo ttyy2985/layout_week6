@@ -1,0 +1,12 @@
+@import "../node_modules/bootstrap-scss/bootstrap.scss";
+
+.navbar {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("https://images.unsplash.com/photo-1566733971017-f6a46e832e95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+  }
+}
