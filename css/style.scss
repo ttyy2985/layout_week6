@@ -1,20 +1,108 @@
 @import '../node_modules/bootstrap-scss/bootstrap.scss';
+
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.navbar {
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+* {
+  outline: 1px solid red;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.section1 {
+  overflow: hidden;
   position: relative;
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   // background-image: url("https://images.unsplash.com/photo-1566733971017-f6a46e832e95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
-  background-image: url('https://images.unsplash.com/photo-1590415555114-d308bf24212e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80');
-  // }
+  .row {
+    height: 800px;
+  }
+  .bgc {
+    background-image: url(../image/photo-1557644978-f61037cfbe49.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -11;
+  }
 }
 
-.section1 .row {
-  height: 800px;
+.article .text {
+  padding: 6%;
+  &:nth-child(odd) {
+    text-align: left;
+  }
+  &:nth-child(even) {
+    text-align: right;
+  }
+  .subtitle {
+    color: #0000009a;
+    font-weight: 400;
+  }
+}
+
+.banner {
+  background-image: url(../image/burningparrot-u2Xn5Bzvllw-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 150px 0;
+  .text {
+    color: #ffffff99;
+  }
+}
+
+.carousel {
+  .card {
+    position: relative;
+    .card-img-top {
+      height: 350px;
+    }
+    .tag {
+      position: absolute;
+      right: 2rem;
+      top: 1rem;
+      color: white;
+    }
+  }
+}
+
+.footer-banner {
+  background-image: url(../image/tom-crew-uDF1mW7EUwM-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 150px 0;
+  .text {
+    color: #ffffff99;
+  }
+  .form-control {
+    background-color: transparent;
+  }
+}
+.footer {
+  .logo {
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .copyright {
+    color: #ffffff99;
+    margin-left: 1rem;
+  }
+  .nav-item {
+    color: #ffffffde;
+  }
 }
