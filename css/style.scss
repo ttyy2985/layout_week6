@@ -38,6 +38,10 @@ a:hover {
     right: 0;
     z-index: -11;
   }
+  .subtitle {
+    color: #0000009a;
+    font-weight: 400;
+  }
 }
 
 .article .text {
@@ -47,10 +51,6 @@ a:hover {
   }
   &:nth-child(even) {
     text-align: right;
-  }
-  .subtitle {
-    color: #0000009a;
-    font-weight: 400;
   }
 }
 
@@ -92,12 +92,6 @@ a:hover {
   }
 }
 .footer {
-  .logo {
-    font-family: 'Raleway';
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
   .copyright {
     color: #ffffff99;
     margin-left: 1rem;
@@ -105,4 +99,10 @@ a:hover {
   .nav-item {
     color: #ffffffde;
   }
+}
+.logo {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
 }

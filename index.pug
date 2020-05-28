@@ -11,7 +11,7 @@ html(lang="en")
 
     section.container-fluid.section1.mb-6
       nav.navbar.navbar-expand-lg.navbar-light.container
-        a.navbar-brand(href='#') Navbar
+        a.logo.navbar-brand(href="index.html") Craftsman
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
           span.navbar-toggler-icon
         #navbarSupportedContent.collapse.navbar-collapse
@@ -29,16 +29,17 @@ html(lang="en")
                 i.fas.fa-shopping-cart
       .row
         .col-lg-6.col-md-6.col-12.bgc
-        .container
+        .container.content
           .row.d-flex.align-items-center
-            .col-lg-6.col-md-6.col-12.text
-              h1 Enjoy Your
+            .col-lg-6.col-md-6.col-12.text.d-flex.flex-column.d-md-block.text-center.text-md-left
+              h1.text-white.text-md-success.mb-3 Enjoy Your
                 br
                 | Minimalist Lifestyle.
-              h4.subtitle The best crafts in Taiwan. Get your free
+              h4.mb-9.mb-md-5.subtitle 
+                | The best crafts in Taiwan. Get your free
                 br
                 | shipping on the first order.
-              button.btn.btn-success Shop now
+              button.btn.btn-success.shop-btn Shop now
     section.container.mb-6.article
       article.row
         .col-lg-6.col-md-6.col-12
@@ -52,9 +53,9 @@ html(lang="en")
             | quartz and 15% feldspar.
           a.text-success.font-weight-bold learn more
       article.row
-        .col-lg-6.col-md-6.col-12.order-2
+        .col-lg-6.col-md-6.col-12.order-md-2
           img(src="image/photo-1572725394982-fbee32027b77.jpg", alt="")
-        .col-lg-6.col-md-6.col-12.d-flex.justify-content-center.algin-items-center.flex-column.text.order-1
+        .col-lg-6.col-md-6.col-12.d-flex.justify-content-center.algin-items-center.flex-column.text.order-md-1
           h4 Less is more
           p Trimming pottery can transform a weighty 
             br
@@ -62,7 +63,7 @@ html(lang="en")
             br
             | hold, look at, and use.
           a.text-success.font-weight-bold learn more
-      article.row
+      article.row.d-flex
         .col-lg-6.col-md-6.col-12
           img(src="image/789.jpg", alt="")
         .col-lg-6.col-md-6.col-12.d-flex.justify-content-center.algin-items-center.flex-column.text
@@ -76,13 +77,13 @@ html(lang="en")
     section.container-fluid.mb-6.banner
       .container
         .row
-          .col-lg-4.col-md-6.col-12
-            h3.text-white “I want to make the life
+          .col-lg-4.col-md-6.col-12.mb-7.mb-md-0
+            h2.text-white(style="line-height:48px;") “I want to make the life
               br
               | more simple by crafts.”
           .col-lg-8.col-md-6.col-12.text
-            p Art Director
-            h4.text-white hsiao-Ming Chen
+            p.mb-1 Art Director
+            h4.text-white.mb-8 hsiao-Ming Chen
             ul.d-flex
               li.mr-3
                 a.text-success Instagram
