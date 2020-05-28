@@ -90,25 +90,25 @@ html(lang="en")
               li
                 a.text-success Twitter
     section.container.carousel.mb-6
-      .row
-        .col-lg-4.col-6.card
+      .row.owl-carousel.owl-theme
+        .col-lg-4.col-6.card.border-0
           img.card-img-top(src='image/tom-crew-XtyxEBiA8D8-unsplash.jpg', alt='Card image cap')
           .tag On Sale
           h4.card-title.mb-1 Tatami Cup
           .descr
             span NT$1,080
             del.ml-2 NT$1,200
-        .col-lg-4.col-6.card
+        .col-lg-4.col-6.card.border-0
           img.card-img-top(src='image/tom-crew-7HuTGlUfQSo-unsplash.jpg', alt='Card image cap')
           h4.card-title.mb-1 Couple Collection
           .descr
             span NT$2,800
-        .col-lg-4.col-6.card
+        .col-lg-4.col-6.card.border-0
           img.card-img-top(src='image/tom-crew-8_ldgq801cE-unsplash.jpg', alt='Card image cap')
           h4.card-title.mb-1 Brotherhood Vase
           .descr
             span NT$4,800
-        .col-lg-4.col-6.card
+        .col-lg-4.col-6.card.border-0
           img.card-img-top(src='image/tom-crew-bgIO-u4GEfI-unsplash.jpg', alt='Card image cap')
           h4.card-title.mb-1 Baifan Bowl
           .descr
@@ -127,14 +127,18 @@ html(lang="en")
                 button.btn.btn-success(type='button') Subscribe
     footer.container-fluid.bg-dark.footer
       .container.py-4
-        .row
-          .col-lg-6.col-12
-            a.text-white.logo(href="index.html") Craftsman
-            span.copyright © 2020. All Rights Reserved.
-          ul.col-lg-6.col-12.d-flex
-            li.mr-5
+        .row.d-flex.align-items-md-center.flex-column.flex-md-row
+          a.text-white.logo.order-1(href="index.html") Craftsman
+          span.ml-md-8.copyright.order-3.order-md-2 © 2020. All Rights Reserved.
+          ul.ml-md-auto.d-block.d-lg-flex.order-2.order-md-3
+            li.mb-8.mr-5.mb-lg-0
               a.nav-item(href="#") Purchase Policy
-            li.mr-5
+            li.mb-8.mr-5.mb-lg-0
               a.nav-item(href="#") Privacy Policy
-            li
+            li.mb-8.mb-lg-0
               a.nav-item(href="#") Privacy Policy
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
+    script.
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel();
+      });

@@ -9,6 +9,7 @@ img {
 ul {
   list-style: none;
   padding: 0;
+  margin-top: 1rem;
 }
 
 a:hover {
@@ -16,7 +17,7 @@ a:hover {
 }
 
 * {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -94,7 +95,6 @@ a:hover {
 .footer {
   .copyright {
     color: #ffffff99;
-    margin-left: 1rem;
   }
   .nav-item {
     color: #ffffffde;
