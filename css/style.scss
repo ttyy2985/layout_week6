@@ -76,10 +76,12 @@ a:hover {
   .text {
     padding: 6%;
   }
-  @include pad-width {
-    .text {
-      padding-left: 0;
+  @include phone-width {
+    & .text {
+      padding: 6% 15px;
     }
+  }
+  @include pad-width {
     & article:nth-child(odd) .text {
       text-align: left;
     }

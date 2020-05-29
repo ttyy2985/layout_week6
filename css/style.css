@@ -12075,10 +12075,13 @@ a:hover {
   padding: 6%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .article .text {
-    padding-left: 0;
+    padding: 6% 15px;
   }
+}
+
+@media (min-width: 768px) {
   .article article:nth-child(odd) .text {
     text-align: left;
   }
