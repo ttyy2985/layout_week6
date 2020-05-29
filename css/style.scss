@@ -123,12 +123,17 @@ a:hover {
   background-image: url(../image/tom-crew-uDF1mW7EUwM-unsplash.jpg);
   background-size: cover;
   background-position: center center;
-  padding: 150px 0;
   .text {
     color: #ffffff99;
   }
   .form-control {
     background-color: transparent;
+  }
+  .title {
+    font-size: 32px;
+    @include pad-width {
+      font-size: 48px;
+    }
   }
 }
 .footer {
