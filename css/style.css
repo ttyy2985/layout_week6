@@ -12672,13 +12672,7 @@ a:hover {
 }
 
 .article .text {
-  padding: 6%;
-}
-
-@media (min-width: 576px) {
-  .article .text {
-    padding: 6% 15px;
-  }
+  padding: 16px 15px;
 }
 
 @media (min-width: 768px) {

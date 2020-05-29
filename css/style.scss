@@ -74,12 +74,7 @@ a:hover {
 
 .article {
   .text {
-    padding: 6%;
-  }
-  @include phone-width {
-    & .text {
-      padding: 6% 15px;
-    }
+    padding: 16px 15px;
   }
   @include pad-width {
     & article:nth-child(odd) .text {
