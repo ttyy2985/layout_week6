@@ -12042,6 +12042,13 @@ a:hover {
 .section1 {
   overflow: hidden;
   position: relative;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .section1 {
+    color: black;
+  }
 }
 
 .section1 .row {
@@ -12060,7 +12067,7 @@ a:hover {
 }
 
 .section1 .subtitle {
-  color: #0000009a;
+  opacity: 0.6;
   font-weight: 400;
 }
 
@@ -12068,12 +12075,16 @@ a:hover {
   padding: 6%;
 }
 
-.article .text:nth-child(odd) {
-  text-align: left;
-}
-
-.article .text:nth-child(even) {
-  text-align: right;
+@media (min-width: 768px) {
+  .article .text {
+    padding-left: 0;
+  }
+  .article article:nth-child(odd) .text {
+    text-align: left;
+  }
+  .article article:nth-child(even) .text {
+    text-align: right;
+  }
 }
 
 .banner {
@@ -12130,5 +12141,12 @@ a:hover {
   font-style: italic;
   font-weight: bold;
   font-size: 1.5rem;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    color: black;
+  }
 }
 /*# sourceMappingURL=style.css.map */

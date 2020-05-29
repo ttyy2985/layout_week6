@@ -1,5 +1,28 @@
 @import '../node_modules/bootstrap-scss/bootstrap.scss';
 
+//先針對media queries的width設為變數
+$pc-media: 992px;
+$pad-media: 768px;
+$phone-media: 576px;
+
+//手機
+@mixin phone-width() {
+  @media (min-width: $phone-media) {
+    @content;
+  }
+}
+//平板
+@mixin pad-width() {
+  @media (min-width: $pad-media) {
+    @content;
+  }
+}
+//電腦
+@mixin pc-width() {
+  @media (min-width: $pc-media) {
+    @content;
+  }
+}
 img {
   display: block;
   max-width: 100%;
@@ -26,6 +49,10 @@ a:hover {
 .section1 {
   overflow: hidden;
   position: relative;
+  @include pad-width {
+    color: black;
+  }
+  color: white;
   .row {
     height: 800px;
   }
@@ -40,18 +67,25 @@ a:hover {
     z-index: -11;
   }
   .subtitle {
-    color: #0000009a;
+    opacity: 0.6;
     font-weight: 400;
   }
 }
 
-.article .text {
-  padding: 6%;
-  &:nth-child(odd) {
-    text-align: left;
+.article {
+  .text {
+    padding: 6%;
   }
-  &:nth-child(even) {
-    text-align: right;
+  @include pad-width {
+    .text {
+      padding-left: 0;
+    }
+    & article:nth-child(odd) .text {
+      text-align: left;
+    }
+    & article:nth-child(even) .text {
+      text-align: right;
+    }
   }
 }
 
@@ -105,4 +139,8 @@ a:hover {
   font-style: italic;
   font-weight: bold;
   font-size: 1.5rem;
+  @include pad-width {
+    color: black;
+  }
+  color: white;
 }
