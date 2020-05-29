@@ -92,10 +92,13 @@ a:hover {
 }
 
 .banner {
+  // @include phone-width {
+  //   padding: 24px 0;
+  // }
   background-image: url(../image/burningparrot-u2Xn5Bzvllw-unsplash.jpg);
   background-size: cover;
   background-position: center center;
-  padding: 150px 0;
+  // padding: 150px 0;
   .text {
     color: #ffffff99;
   }
