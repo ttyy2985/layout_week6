@@ -12657,7 +12657,7 @@ a:hover {
   padding-top: 60px;
 }
 
-.sidenav a {
+.sidenav .text-dark {
   text-decoration: none;
   font-size: 25px;
   display: block;
@@ -12665,7 +12665,7 @@ a:hover {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
+.sidenav .text-dark:hover {
   color: #f1f1f1;
 }
 
