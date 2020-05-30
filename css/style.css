@@ -12848,4 +12848,21 @@ a:hover {
   border: 0;
   color: #343a40;
 }
+
+.submenu {
+  font-size: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+@media (min-width: 992px) {
+  .submenu {
+    font-size: 24px;
+  }
+}
+
+.submenu .active {
+  font-weight: bold;
+  color: #0e8a00 !important;
+}
 /*# sourceMappingURL=style.css.map */

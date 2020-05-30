@@ -13,6 +13,19 @@ html(lang="en")
         include sidebarMobile.pug
         section.container-fluid.section1
             include navbar.pug
+        .container-fluid.bg-light.py-3
+            .container
+                nav.nav.submenu.d-block
+                    a.pr-lg-5.pr-3.text-muted.active(href='#') ALL
+                        sup 24
+                    a.pr-lg-5.pr-3.text-muted(href='#') BOWL
+                        sup 10
+                    a.pr-lg-5.pr-3.text-muted(href='#') CUP
+                        sub 8
+                    a.pr-lg-5.pr-3.text-muted(href='#') PLATE
+                        sup 3
+                    a.text-muted(href='#') VASE
+                        sup 3
         section.container
             ul.row.product-list
                 section.col-md-4.col-6
