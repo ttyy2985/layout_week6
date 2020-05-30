@@ -9,25 +9,36 @@ html(lang="en")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
   body
-
+    #mySidenav.sidenav.d-lg-none.d-block.bg-light(style="min-height:100vh;")
+      i.fas.fa-arrow-left.closebtn(href='javascript:void(0)', onclick='closeNav()') 
+      i.fas.fa-shopping-cart.cartbtn
+      a(href='#') About
+      a(href='#') Services
+      a(href='#') Clients
+      a(href='#') Contact
     section.container-fluid.section1.mb-6
       nav.navbar.navbar-expand-lg.container
+        button.navbar-toggler.order-md-2.py-2(onclick="openNav()")
+          i.fas.fa-bars.text-white
         a.logo(href="index.html") Craftsman
-        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-          span.navbar-toggler-icon
+        a.text-white.d-md-none.d-block.py-2(href='#') 
+          i.fas.fa-shopping-cart
         #navbarSupportedContent.collapse.navbar-collapse
-          ul.navbar-nav.ml-auto
-            li.nav-item.active.mr-5
-              a.nav-link.text-white(href='#')
+          ul.ml-auto.d-lg-flex.d-none.navbar-nav
+            li.nav-item.active.mr-3
+              a.nav-link.text-white(href='product.html')
                 | Product 
                 span.sr-only (current)
-            li.nav-item.mr-5
+            li.nav-item.mr-3
               a.nav-link.text-white(href='#') Blog
-            li.nav-item.mr-5
+            li.nav-item.mr-3
               a.nav-link.text-white(href='#') Contact
             li.nav-item
               a.nav-link.text-white(href='#') 
                 i.fas.fa-shopping-cart
+
+        
+        
       .row
         .col-lg-6.col-md-6.col-12.bgc
         .container.content
@@ -97,24 +108,24 @@ html(lang="en")
     section.container.carousel.mb-6
       .row.owl-carousel.pl-8
         .card.border-0
-          img.card-img-top(src='image/tom-crew-XtyxEBiA8D8-unsplash.jpg', alt='Card image cap')
+          img.card-img-top.mb-2(src='image/tom-crew-XtyxEBiA8D8-unsplash.jpg', alt='Card image cap')
           .tag On Sale
           h4.card-title.mb-1 Tatami Cup
           .descr
             span NT$1,080
             del.ml-2 NT$1,200
         .card.border-0
-          img.card-img-top(src='image/tom-crew-7HuTGlUfQSo-unsplash.jpg', alt='Card image cap')
+          img.card-img-top.mb-2(src='image/tom-crew-7HuTGlUfQSo-unsplash.jpg', alt='Card image cap')
           h4.card-title.mb-1 Couple Collection
           .descr
             span NT$2,800
         .card.border-0
-          img.card-img-top(src='image/tom-crew-8_ldgq801cE-unsplash.jpg', alt='Card image cap')
+          img.card-img-top.mb-2(src='image/tom-crew-8_ldgq801cE-unsplash.jpg', alt='Card image cap')
           h4.card-title.mb-1 Brotherhood Vase
           .descr
             span NT$4,800
         .card.border-0
-          img.card-img-top(src='image/tom-crew-bgIO-u4GEfI-unsplash.jpg', alt='Card image cap')
+          img.card-img-top.mb-2(src='image/tom-crew-bgIO-u4GEfI-unsplash.jpg', alt='Card image cap')
           h4.card-title.mb-1 Baifan Bowl
           .descr
             span NT$1,800
@@ -143,6 +154,8 @@ html(lang="en")
             li.mb-8.mb-lg-0
               a.nav-item(href="#") Privacy Policy
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
     script.
       $(document).ready(function(){
@@ -154,7 +167,7 @@ html(lang="en")
                   items:1,
               },
               768:{
-                  items:3,
+                  items:2,
               },
               992:{
                   items:3,
@@ -162,3 +175,10 @@ html(lang="en")
           }
         });
       });
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
