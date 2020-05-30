@@ -12644,7 +12644,7 @@ a:hover {
 }
 
 .sidenav {
-  min-height: 100vh;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 10;
@@ -12655,14 +12655,11 @@ a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 60px;
-  text-align: center;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -12723,6 +12720,13 @@ a:hover {
 .section1 .subtitle {
   opacity: 0.6;
   font-weight: 400;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .section1 .subtitle {
+    font-size: 24px;
+  }
 }
 
 .article .text {

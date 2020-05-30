@@ -9,13 +9,37 @@ html(lang="en")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
   body
-    #mySidenav.sidenav.d-lg-none.d-block.bg-light(style="min-height:100vh;")
+    #mySidenav.sidenav.d-lg-none.d-block.bg-white(style="min-height:100vh;")
       i.fas.fa-arrow-left.closebtn(href='javascript:void(0)', onclick='closeNav()') 
       i.fas.fa-shopping-cart.cartbtn
-      a(href='#') About
-      a(href='#') Services
-      a(href='#') Clients
-      a(href='#') Contact
+      ul#accordionExample.accordion.pl-4
+        li
+          #headingOne.border-bottom.bg-white
+            h2.my-8
+              a.text-dark(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                | Product
+          #collapseOne.border-bottom.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+            ul
+              li.pb-8 ALL
+                sup 24
+              li.pb-8 BOWL
+                sup 10
+              li.pb-8 CUP
+                sub 8
+              li.pb-8 PLATE
+                sup 3
+              li.pb-8 VASE
+                sup 3
+        li
+          #headingTwo.border-bottom.bg-white
+            h2.my-8
+              a.text-dark.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                | Blog
+        li
+          #headingThree.border-bottom.bg-white
+            h2.my-8
+              a.text-dark.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                | Contact
     section.container-fluid.section1.mb-6
       nav.navbar.navbar-expand-lg.container
         button.navbar-toggler.order-md-2.py-2(onclick="openNav()")
