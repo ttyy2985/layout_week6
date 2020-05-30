@@ -12825,4 +12825,27 @@ a:hover {
     height: 240px;
   }
 }
+
+.pagination .page-item.active .page-link {
+  background-color: transparent;
+  color: #0e8a00;
+}
+
+.pagination .page-item.active .page-link:before {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: '';
+  width: 40%;
+  height: 1px;
+  background: #0e8a00;
+}
+
+.pagination .page-item .page-link {
+  font-size: 24px;
+  border: 0;
+  color: #343a40;
+}
 /*# sourceMappingURL=style.css.map */
