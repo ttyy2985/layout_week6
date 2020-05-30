@@ -143,7 +143,7 @@ a:hover {
   }
 }
 
-.carousel {
+.carousel,.product-list {
   .card {
     position: relative;
     .card-img-top {
@@ -192,4 +192,18 @@ a:hover {
     color: black;
   }
   color: white;
+}
+
+.product-list{
+  .card .card-img-top{
+    height: 161px;
+  }
+  @include pad-width {
+    section:nth-child(1) li:nth-child(2) .card-img-top,section:nth-child(2) li:nth-child(3) .card-img-top,section:nth-child(3) li:nth-child(1) .card-img-top{
+      height: 480px;
+    }
+    section:nth-child(1) li:nth-child(3) .card-img-top,section:nth-child(2) li:nth-child(1) .card-img-top,section:nth-child(3) li:nth-child(2) .card-img-top{
+      height: 240px;
+    }
+  }
 }

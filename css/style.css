@@ -12752,15 +12752,15 @@ a:hover {
   color: #ffffff99;
 }
 
-.carousel .card {
+.carousel .card, .product-list .card {
   position: relative;
 }
 
-.carousel .card .card-img-top {
+.carousel .card .card-img-top, .product-list .card .card-img-top {
   height: 350px;
 }
 
-.carousel .card .tag {
+.carousel .card .tag, .product-list .card .tag {
   position: absolute;
   right: 2rem;
   top: 1rem;
@@ -12810,6 +12810,19 @@ a:hover {
 @media (min-width: 768px) {
   .logo {
     color: black;
+  }
+}
+
+.product-list .card .card-img-top {
+  height: 161px;
+}
+
+@media (min-width: 768px) {
+  .product-list section:nth-child(1) li:nth-child(2) .card-img-top, .product-list section:nth-child(2) li:nth-child(3) .card-img-top, .product-list section:nth-child(3) li:nth-child(1) .card-img-top {
+    height: 480px;
+  }
+  .product-list section:nth-child(1) li:nth-child(3) .card-img-top, .product-list section:nth-child(2) li:nth-child(1) .card-img-top, .product-list section:nth-child(3) li:nth-child(2) .card-img-top {
+    height: 240px;
   }
 }
 /*# sourceMappingURL=style.css.map */

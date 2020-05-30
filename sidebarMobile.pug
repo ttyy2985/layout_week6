@@ -1,0 +1,32 @@
+#mySidenav.sidenav.d-lg-none.d-block.bg-white(style="min-height:100vh;")
+    i.fas.fa-arrow-left.closebtn(href='javascript:void(0)', onclick='closeNav()') 
+    i.fas.fa-shopping-cart.cartbtn
+    ul#accordionExample.accordion.pl-4
+        li
+            #headingOne.border-bottom.bg-white
+                h2.my-8
+                    a.text-dark(type='button', data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                    | Product
+            #collapseOne.border-bottom.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+                ul
+                    li.pb-8 
+                        a(href="product.html") ALL
+                            sup 24
+                    li.pb-8 BOWL
+                        sup 10
+                    li.pb-8 CUP
+                        sub 8
+                    li.pb-8 PLATE
+                        sup 3
+                    li.pb-8 VASE
+                        sup 3
+        li
+            #headingTwo.border-bottom.bg-white
+                h2.my-8
+                    a.text-dark.collapsed(type='button', data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                    | Blog
+        li
+            #headingThree.border-bottom.bg-white
+                h2.my-8
+                    a.text-dark.collapsed(type='button', data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                    | Contact
